@@ -56,7 +56,7 @@ jobs:
         run: echo "Validando entorno..."
 
       # Paso de falla deliberada
-      - name: Simular prueba fallida
+      - name: Simular prueba corregida
         run: |
-          echo "ERROR: Falló la suite de pruebas automatizadas."
-          exit 1
+          echo "SUCCESS: La suite de pruebas automatizadas pasó correctamente."
+          exit 0
